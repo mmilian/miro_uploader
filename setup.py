@@ -24,11 +24,9 @@ setup(
         #   5 - Production/Stable
         'Development Status :: 3 - Alpha',
    ],
-    py_modules=["watchdog"],
-    #
     #packages=find_packages(where='src'),  # Required
     python_requires='>=3.5, <4',
-    install_requires=['peppercorn'],  # Optional
+    install_requires=['watchdog'],  # Optional
     entry_points={  # Optional
         'console_scripts': [
             'miro_uploader=miro_uploader:main',
