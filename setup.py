@@ -1,14 +1,5 @@
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
-import pathlib
-
-here = pathlib.Path(__file__).parent.resolve()
-
-# Get the long description from the README file
-long_description = (here / 'README.md').read_text(encoding='utf-8')
-
-# Arguments marked as "Required" below must be included for upload to PyPI.
-# Fields marked as "Optional" may be commented out.
 
 setup(
     name='miro_uploader',  # Required
@@ -25,7 +16,7 @@ setup(
         'Development Status :: 3 - Alpha',
    ],
     #packages=find_packages(where='src'),  # Required
-    python_requires='>=3.5, <4',
+    python_requires='>=3.6, <4',
     install_requires=['watchdog'],  # Optional
     entry_points={  # Optional
         'console_scripts': [
