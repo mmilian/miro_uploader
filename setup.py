@@ -24,7 +24,7 @@ setup(
         #   5 - Production/Stable
         'Development Status :: 3 - Alpha',
    ],
-    py_modules=["my_module"],
+    py_modules=["watchdog"],
     #
     #packages=find_packages(where='src'),  # Required
     python_requires='>=3.5, <4',
