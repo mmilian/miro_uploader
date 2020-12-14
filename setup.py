@@ -15,7 +15,7 @@ setup(
         #   5 - Production/Stable
         'Development Status :: 3 - Alpha',
    ],
-    #packages=find_packages(where='src'),  # Required
+    packages=['miro_uploader'],  # Required
     python_requires='>=3.6, <4',
     install_requires=['watchdog'],  # Optional
     entry_points={  # Optional
