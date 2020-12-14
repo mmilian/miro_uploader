@@ -15,7 +15,9 @@ setup(
         #   5 - Production/Stable
         'Development Status :: 3 - Alpha',
    ],
-    packages=['miro_uploader'],  # Required
+    # packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),  # Required
+    # If your package is a single module, use this instead of 'packages':
+    py_modules=['miro_uploader'],
     python_requires='>=3.6, <4',
     install_requires=['watchdog'],  # Optional
     entry_points={  # Optional
